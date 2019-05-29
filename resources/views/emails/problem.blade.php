@@ -2,7 +2,7 @@
     <tbody>
         <tr>
             <td style="padding: 5px 0 5px 0;" align="center" bgcolor="#4D82B8">
-                <img style="display: block;" src="{{ $message->embed('images/empresa.png') }}" alt="Empresa" width="90" height="50"/>
+                <img style="display: block;" src="{{ $message->embed('images/solor.png') }}" alt="Solor Tecnologia" width="90" height="50"/>
             </td>
         </tr>
         <tr>
@@ -65,7 +65,7 @@
                     <tbody>
                         <tr>
                             <td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 14px; text-align: center;">
-                                &reg; Empresa, {{ date('Y') }}
+                                &reg; Solor Tecnologia, {{ date('Y') }}
                             </td>
                         </tr>
                     </tbody>

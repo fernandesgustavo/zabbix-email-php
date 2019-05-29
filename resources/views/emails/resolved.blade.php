@@ -3,7 +3,7 @@
             <table align="center" border="1" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                 <tr>
                     <td align="center" bgcolor="#4D82B8" style="padding: 5px 0 5px 0;">
-                        <img src="{{ $message->embed('images/empresa.png') }}" alt="Empresa" width="90" height="50" style="display: block;" />
+                        <img src="{{ $message->embed('images/solor.png') }}" alt="Solor Tecnologia" width="90" height="50" style="display: block;" />
                     </td>
                 </tr>
                 <tr>
@@ -50,7 +50,7 @@
                     <td bgcolor="#4D82B8" style="padding: 10px 0 10px 0;">
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
-                                <td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 14px; text-align: center;">&reg; Empresa, {{ date('Y') }}</td>
+                                <td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 14px; text-align: center;">&reg; Solor Tecnologia, {{ date('Y') }}</td>
                             </tr>
                         </table>
                     </td>

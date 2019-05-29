@@ -1,7 +1,7 @@
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
     <tbody>
     <tr>
-    <td style="padding: 5px 0 5px 0;" align="center" bgcolor="#4D82B8"><img style="display: block;" src="{{ $message->embed('images/empresa.png') }}" alt="Empresa" width="90" height="50" /></td>
+    <td style="padding: 5px 0 5px 0;" align="center" bgcolor="#4D82B8"><img style="display: block;" src="{{ $message->embed('images/solor.png') }}" alt="Solor Tecnologia" width="90" height="50" /></td>
     </tr>
     <tr>
     <td style="padding: 40px 30px 40px 30px;" bgcolor="#ffffff">
@@ -50,7 +50,7 @@
     <table border="0" width="100%" cellspacing="0" cellpadding="0">
     <tbody>
     <tr>
-    <td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 14px; text-align: center;">&reg; Empresa, {{ date('Y') }}</td>
+    <td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 14px; text-align: center;">&reg; Solor Tecnologia, {{ date('Y') }}</td>
     </tr>
     </tbody>
     </table>

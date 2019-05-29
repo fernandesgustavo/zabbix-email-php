@@ -4,10 +4,8 @@ LABEL Gustavo Fernandes
 
 COPY . /app
 
-RUN chown -R application:application /app/public
-RUN chown -R application:application /app/storage
+RUN chown -R application:application /app
 RUN chmod -R 755 /app
-RUN chmod -R 755 /app/storage
 
 COPY zabbixemailphp.apache.conf /opt/docker/etc/httpd/vhost.common.d/zabbixemailphp.apache.conf
 
