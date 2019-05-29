@@ -48,13 +48,17 @@ docker container run zabbix-email-php -d -p 8002:80 -e ZABBIX_URL="http://URL_DO
 - O último parâmetro deverá estar configurado como JSON no Zabbix, com a seguinte estrutura:
 
 {
-
 "type": "problem",
+"ackmessage": "{ACK.MESSAGE}",
+"ackdate": "{ACK.DATE}",
 "triggername": "{TRIGGER.NAME}",
 "triggerstatus": "{TRIGGER.STATUS}",
 "triggerseverity": "{TRIGGER.SEVERITY}",
 "eventdate": "{EVENT.DATE}",
 "eventtime": "{EVENT.TIME}",
+"eventrecoverydate": "{EVENT.RECOVERY.DATE}",
+"eventrecoverytime": "{EVENT.RECOVERY.TIME}",
+"eventage": "{EVENT.AGE}",
 "hostname": "{HOST.NAME1}",
 "hostdns": "{HOST.DNS1}",
 "hostip": "{HOST.IP1}",
@@ -64,7 +68,6 @@ docker container run zabbix-email-php -d -p 8002:80 -e ZABBIX_URL="http://URL_DO
 "itemid": "{ITEM.ID1}",
 "itemname": "{ITEM.NAME1}",
 "itemvalue": "{ITEM.VALUE1}"
-
 }
 
 - A view será selecionada para envio de acordo com o campo type (problem, resolved, acknowledged).
