@@ -8,37 +8,37 @@
     <table border="1" width="100%" cellspacing="0" cellpadding="10">
     <tbody>
     <tr>
-    <td style="color: #ffffff; background-color: #FFE600; font-family: Arial, sans-serif; font-size: 24px; text-align: center;"><strong>{TRIGGER.NAME}</strong></td>
+    <td style="color: #ffffff; background-color: #FFE600; font-family: Arial, sans-serif; font-size: 24px; text-align: center;"><strong>{{ $ms['triggername'] }}</strong></td>
     </tr>
     <tr>
-    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Acknowledgement: </strong>{ACK.MESSAGE}</td>
+    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Acknowledgement: </strong>{{ $ms['ackmessage'] }}</td>
     </tr>
     <tr>
-    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Acknowledgement Time: </strong>{ACK.DATE}</td>
+    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Acknowledgement Time: </strong>{{ $ms['ackdate'] }}</td>
     </tr>
     <tr>
-    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Trigger status: </strong>{TRIGGER.STATUS}</td>
+    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Trigger status: </strong>{{ $ms['triggerstatus'] }}</td>
     </tr>
     <tr>
-    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Trigger severity: </strong>{TRIGGER.SEVERITY}</td>
+    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Trigger severity: </strong>{{ $ms['triggerseverity'] }}</td>
     </tr>
     <tr>
-    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Start time:</strong> {EVENT.DATE} - {EVENT.TIME}</td>
+    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Start time: </strong>{{ $ms['eventdate'] }} - {{ $ms['eventtime'] }}</td>
     </tr>
     <tr>
-    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Host:</strong> {HOST.NAME1} - ({HOST.DNS1}, {HOST.IP1})</td>
+    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Host: </strong>{{ $ms['hostname'] }} - ({{ $ms['hostdns'] }}, {{ $ms['hostip'] }})</td>
     </tr>
     <tr>
-    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Host description: </strong>{HOST.DESCRIPTION1}</td>
+    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Host description: </strong>{{ $ms['hostdescription'] }}</td>
     </tr>
     <tr>
-    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Trigger Description: </strong>{TRIGGER.DESCRIPTION}</td>
+    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Trigger Description: </strong>{{ $ms['triggerdescription'] }}</td>
     </tr>
     <tr>
-    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Value: </strong>{ITEM.VALUE1}</td>
+    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Value: </strong>{{ $ms['itemvalue'] }}</td>
     </tr>
     <tr>
-    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Original event ID: </strong>{EVENT.ID}</td>
+    <td style="color: #153643; background-color: #FFC70F; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;"><strong>Original event ID: </strong>{{ $ms['eventid'] }}</td>
     </tr>
     </tbody>
     </table>
