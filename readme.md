@@ -43,6 +43,7 @@ docker container run zabbix-email-php -d -p 8002:80 -e ZABBIX_URL="http://URL_DO
 
 ### Alterações/Atualizações
 
+- O primeiro parâmetro enviado para o magic.py deverá ser URL:PORTA/api/v1/email;
 - O layout do e-mail está configurado nas views e não mais no Zabbix;
 - O último parâmetro deverá estar configurado como JSON no Zabbix, com a seguinte estrutura:
 
