@@ -23,10 +23,10 @@
 
 - Na raíz do projeto execute: 
 
-- docker build -t "gustavodevops/zabbix-email-php:1.0" .
+docker build -t "gustavodevops/zabbix-email-php:1.0" .
 (comando para criar uma imagem Docker a partir do código fonte)
 
-- docker container run zabbix-email-php -d -p 8002:80 -e ZABBIX_URL="http://URL_DO_ZABBIX/zabbix/" -e ZABBIX_USER="USUARIO_DO_ZABBIX" -e ZABBIX_PASSWORD="SENHA_DO_ZABBIX" gustavodevops/zabbix-email-php:1.0
+docker container run zabbix-email-php -d -p 8002:80 -e ZABBIX_URL="http://URL_DO_ZABBIX/zabbix/" -e ZABBIX_USER="USUARIO_DO_ZABBIX" -e ZABBIX_PASSWORD="SENHA_DO_ZABBIX" gustavodevops/zabbix-email-php:1.0
 (comando para subir o container Docker a partir da imagem criada anteriormente, com os parâmetros necessários)
 
     
