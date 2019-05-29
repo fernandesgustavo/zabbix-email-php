@@ -1,0 +1,5 @@
+/vendor
+/.idea
+/public
+Homestead.json
+Homestead.yaml
