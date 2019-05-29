@@ -87,36 +87,36 @@ class EmailController extends Controller
 
     public function testeEmail(Request $request)
     {
-        // // dados para o login no zabbix
-        // $user = env('ZABBIX_USER');
-        // $password = env('ZABBIX_PASSWORD');
+        // dados para o login no zabbix
+        $user = env('ZABBIX_USER');
+        $password = env('ZABBIX_PASSWORD');
 
-        // $url = 'http://10.241.0.4/zabbix/index.php';
+        $url = 'http://10.241.0.4/zabbix/index.php';
 
-        // // informações para o login na página inicial do zabbix
-        // $payload = array(
-        //     'name' => $user,
-        //     'password' => $password,
-        //     'enter' => 'Sign in'
-        // );
+        // informações para o login na página inicial do zabbix
+        $payload = array(
+            'name' => $user,
+            'password' => $password,
+            'enter' => 'Sign in'
+        );
 
-        // // arquivo para o cookie da sessão
-        // $cookieFile = 'cookies.txt';
-        // if(!file_exists($cookieFile))
-        // {
-        //     $fh = fopen($cookieFile, 'w');
-        //     fwrite($fh, '');
-        //     fclose($fh);
-        // }
+        // arquivo para o cookie da sessão
+        $cookieFile = 'cookies.txt';
+        if(!file_exists($cookieFile))
+        {
+            $fh = fopen($cookieFile, 'w');
+            fwrite($fh, '');
+            fclose($fh);
+        }
 
-        // // chama a página principal e realiza o login
-        // $this->getRequest($url, $payload, $cookieFile);
+        // chama a página principal e realiza o login
+        $this->getRequest($url, $payload, $cookieFile);
 
-        // // chama a página do gráfico e recebe a imagem png
-        // $return = $this->getRequest('http://10.241.0.4/zabbix/chart3.php?name=icmpping&period=3600&width=800&height=200&stime=1558623863&items[0][itemid]=181332&items[0][drawtype]=5&items[0][color]=218910', NULL, $cookieFile);
+        // chama a página do gráfico e recebe a imagem png
+        $return = $this->getRequest('http://10.241.0.4/zabbix/chart3.php?name=icmpping&period=3600&width=800&height=200&stime=1558623863&items[0][itemid]=181332&items[0][drawtype]=5&items[0][color]=218910', NULL, $cookieFile);
 
-        // header("Content-type: image/png");
-        // echo $return;
+        header("Content-type: image/png");
+        echo $return;
     }
 
     public function createEmail(Request $request)
