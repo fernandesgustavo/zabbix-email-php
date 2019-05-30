@@ -1,5 +1,6 @@
 /vendor
 /.idea
 /public/images
+/public/cookies.txt
 Homestead.json
 Homestead.yaml
