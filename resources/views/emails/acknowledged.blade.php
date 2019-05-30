@@ -1,7 +1,7 @@
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
     <tbody>
     <tr>
-    <td style="padding: 5px 0 5px 0;" align="center" bgcolor="#4D82B8"><img style="display: block;" src="{{ $message->embed('images/solor.png') }}" alt="Solor Tecnologia" width="90" height="50" /></td>
+    <td style="padding: 5px 0 5px 0;" align="center" bgcolor="#4D82B8"><img style="display: block;" src="{{ $message->embed('images/logo.png') }}" alt="Solor Tecnologia" width="90" height="50" /></td>
     </tr>
     <tr>
     <td style="padding: 40px 30px 40px 30px;" bgcolor="#ffffff">
