@@ -45,7 +45,7 @@ docker container run zabbix-email-php -d -p 8002:80 -e ZABBIX_URL="http://URL_DO
 
 - O primeiro parâmetro enviado para o magic.py deverá ser URL:PORTA/api/v1/email;
 
-![Tela de exemplo de configuração da media.](https://github.com/fernandesgustavo/zabbix-email-php/master/public/examples/zabbix-media.png)
+![Tela de exemplo de configuração da media.](https://github.com/fernandesgustavo/zabbix-email-php/blob/master/public/examples/zabbix-media.png)
 
 
 - O layout do e-mail está configurado nas views e não mais no Zabbix;
@@ -76,7 +76,7 @@ docker container run zabbix-email-php -d -p 8002:80 -e ZABBIX_URL="http://URL_DO
 }
 ```
 
-![Tela de exemplo de configuração da ação.](https://github.com/fernandesgustavo/zabbix-email-php/master/public/examples/zabbix-action.png)
+![Tela de exemplo de configuração da ação.](https://github.com/fernandesgustavo/zabbix-email-php/blob/master/public/examples/zabbix-action.png)
 
 
 - A view será selecionada para envio de acordo com o campo type (problem, resolved, acknowledged).
