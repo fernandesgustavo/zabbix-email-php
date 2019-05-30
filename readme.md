@@ -36,8 +36,9 @@ docker container run zabbix-email-php -d -p 8002:80 -e ZABBIX_URL="http://URL_DO
     
 ### URLs
 
-- http://localhost:8002/api/v1/info GET
-- http://localhost:8002/api/v1/email POST (recebe os parâmetros do magic_stack)
+- http://localhost:8002/api/v1/info GET (exibe informações sobre a API)
+- http://localhost:8002/api/v1/graph/{item_id}/{item_name} GET (recebe os parâmetros e exibe o gráfico com o intervalo de 1h)
+- http://localhost:8002/api/v1/email POST (recebe os parâmetros para envio do e-mail do magic_stack)
 
 
 
