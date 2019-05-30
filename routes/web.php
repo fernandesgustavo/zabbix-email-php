@@ -22,7 +22,7 @@ $router->group(['prefix' => 'api/v1'], function($app)
         echo 'API para envio de e-mail criada por Gustavo Fernandes.';
     }]);
 
-    $app->get('email/teste','EmailController@testeEmail');
+    $app->get('graph/{item_id:[0-9]+}/{item_name:[a-z]+}','GraphController@showGraph');
     
     $app->post('email','EmailController@createEmail');
 });
