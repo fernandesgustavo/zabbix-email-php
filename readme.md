@@ -17,7 +17,7 @@
 ### Preparação do código fonte
 
 - Clonar o projeto;
-- Criar a pasta images e adicionar a logo da empresa de origem dos e-mails (zabbix-email-php/public/images/empresa.png).
+- Criar a pasta images e adicionar a logo da empresa de origem dos e-mails (zabbix-email-php/public/images/logo.png).
 - Essa logo será utilizada nas views (zabbix-email-php/resources/views/emails/*) de cada tipo de e-mail. Fique a vontade para personalizar o front e imagens.
 
 
@@ -44,9 +44,14 @@ docker container run zabbix-email-php -d -p 8002:80 -e ZABBIX_URL="http://URL_DO
 ### Alterações/Atualizações
 
 - O primeiro parâmetro enviado para o magic.py deverá ser URL:PORTA/api/v1/email;
+
+![Tela de exemplo de configuração da media.](https://github.com/fernandesgustavo/zabbix-email-php/master/public/examples/zabbix-media.png)
+
+
 - O layout do e-mail está configurado nas views e não mais no Zabbix;
 - O último parâmetro deverá estar configurado como JSON no Zabbix, com a seguinte estrutura:
 
+```json
 {
 "type": "problem",
 "ackmessage": "{ACK.MESSAGE}",
@@ -69,6 +74,10 @@ docker container run zabbix-email-php -d -p 8002:80 -e ZABBIX_URL="http://URL_DO
 "itemname": "{ITEM.NAME1}",
 "itemvalue": "{ITEM.VALUE1}"
 }
+```
+
+![Tela de exemplo de configuração da ação.](https://github.com/fernandesgustavo/zabbix-email-php/master/public/examples/zabbix-action.png)
+
 
 - A view será selecionada para envio de acordo com o campo type (problem, resolved, acknowledged).
 - Fique a vontade para passar a quantidade de parâmetros que achar necessário no JSON, eles poderão ser utilizados nas views.
