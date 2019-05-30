@@ -82,3 +82,20 @@ docker container run zabbix-email-php -d -p 8002:80 -e ZABBIX_URL="http://URL_DO
 
 - A view será selecionada para envio de acordo com o campo type (problem, resolved, acknowledged).
 - Fique a vontade para passar a quantidade de parâmetros que achar necessário no JSON, eles poderão ser utilizados nas views.
+
+
+### Telas de e-mail default
+
+- Problem
+
+![Tela de exemplo de um e-mail como problem.](https://github.com/fernandesgustavo/zabbix-email-php/blob/master/public/examples/zabbix-problem.png)
+
+- Resolved
+
+![Tela de exemplo de um e-mail como resolved.](https://github.com/fernandesgustavo/zabbix-email-php/blob/master/public/examples/zabbix-resolved.png)
+
+- Acknowledged
+
+![Tela de exemplo de um e-mail como acknowledged.](https://github.com/fernandesgustavo/zabbix-email-php/blob/master/public/examples/zabbix-acknowledged.png)
+
+Retificando que antes de gerar a imagem Docker você poderá criar novas views html e passar os parâmetros pelo JSON, construindo e-mails personalizados.
