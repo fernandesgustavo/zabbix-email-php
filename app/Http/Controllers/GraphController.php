@@ -35,6 +35,11 @@ class GraphController extends Controller
 
         header("Content-type: image/png");
 
+        // salva a imagem no diretório
+        // $fp = fopen(app()->basePath('public/' . '/images/graph.png'),'x');
+        // fwrite($fp, $return);
+        // fclose($fp);
+
         echo $return;
     }
 
