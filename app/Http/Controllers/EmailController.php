@@ -87,12 +87,6 @@ class EmailController extends Controller
 
     public function createEmail(Request $request)
     {
-        // pega o gráfico e anexa ao html
-        if($this->message['itemid'] && $this->message['itemname'])
-        {
-            $this->graph = $this->getGraph();
-        }
-
         // seta as variáveis para o envio
         config(
             [
@@ -110,22 +104,35 @@ class EmailController extends Controller
             ]
         );
 
-        try
+        // verifica se passou os dados do item
+        if(!empty($this->message['itemid']) && !empty($this->message['itemname']))
         {
-            Mail::to($this->to_addrs)->send(new EmailShipped($this->subject, $this->message, $this->graph));
+            // pega o gráfico e chama o envio
+            try
+            {
+                $this->graph = $this->getGraph();
 
-            return json_encode(array(
-                'status' => 'OK'
-            ));
-
+                Mail::to($this->to_addrs)->send(new EmailShipped($this->subject, $this->message, $this->graph));
+    
+                return json_encode(array(
+                    'status' => 'OK'
+                ));
+            }
+            catch (\Throwable $th)
+            {
+                return json_encode(array(
+                    'status' => 'FAIL',
+                    'message' => $th->getMessage()
+                ));
+            }
         }
-        catch (\Throwable $th)
+        else
         {
             return json_encode(array(
                 'status' => 'FAIL',
-                'message' => $th->getMessage()
+                'message' => 'Os dados do item utilizados para o gráfico não foram informados.'
             ));
-        } 
+        }
     }
 
     public function getGraph()
